@@ -1,3 +1,5 @@
+const updateEvilScientistCards = function
+
 const evilScientists = {
   scientist: [
     {
@@ -13,4 +15,13 @@ const evilScientists = {
       description: "Test person",
     },
   ],
+
+  addScientist: function ({ name, age, amountOfHenchman, description }) {
+    return this.scientist.push({
+      name: name,
+      age: age,
+      amountOfHenchman: amountOfHenchman,
+      description: description,
+    });
+  },
 };
